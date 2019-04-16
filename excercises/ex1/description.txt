@@ -1,0 +1,5 @@
+make a list of:
+- emails
+- phones
+- address
+from scatter files in this folder
