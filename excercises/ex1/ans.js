@@ -1,4 +1,5 @@
 var fs = require("fs");
+var exec = require("child_process").exec;
 
 var listFiles = fs.readdirSync("./");
 var finalEmails = [];
@@ -32,3 +33,8 @@ finalPhones.forEach(function(phone) {
 });
 
 fs.writeFileSync("./output.txt", outputFileContent);
+
+
+// exec("cat *", function(err, stdout) {
+// 	console.log(stdout);
+// });
