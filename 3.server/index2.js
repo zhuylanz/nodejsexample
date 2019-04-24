@@ -11,7 +11,7 @@ app.use(express.static(`${__dirname}/public`));
 var htmlTemplate = fs.readFileSync("./public/search.html", "utf8");
 
 app.get("/books", function(req, res) {
-	var searchString = req.query.q;
+	var searchString = req.query.sach;
 	var books = db.books;
 
 	for (var i = 0; i < books.length; i++) {

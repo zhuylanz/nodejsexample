@@ -1,4 +1,5 @@
-tạo 1 server cho phép người dùng DOWNLOAD file sách bằng HTTP REQUEST với cấu trúc:
+1. tạo file index2.js ở thư mục gốc 3.server, copy toàn bộ code của file index.js vào đó.
+2. tạo 1 server cho phép người dùng DOWNLOAD file sách bằng HTTP REQUEST với cấu trúc:
 
 - method: GET
 - querystring: sach=[tên sách]
