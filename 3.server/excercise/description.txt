@@ -1,0 +1,4 @@
+tạo 1 server cho phép người dùng DOWNLOAD file sách bằng HTTP REQUEST với cấu trúc:
+
+- method: GET
+- querystring: sach=[tên sách]

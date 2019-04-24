@@ -1,0 +1,22 @@
+{
+	"books": [
+		{
+			"author": "Kishimi",
+			"name": "Dám bị ghét",
+			"noAccentName": "dam-bi-ghet",
+			"filePath": "books/dam-bi-ghet.pdf"
+		},
+		{
+			"author": "Newport",
+			"name": "Kỹ năng đi trước đam mê",
+			"noAccentName": "ky-nang-di-truoc-dam-me",
+			"filePath": "books/ky-nang-di-truoc-dam-me.pdf"
+		},
+		{
+			"author": "Me Xoai",
+			"name": "Ăn dặm không nước mắt",
+			"noAccentName": "an-dam-khong-nuoc-mat",
+			"filePath": "books/an-dam-khong-nuoc-mat.pdf"
+		}
+	]
+}

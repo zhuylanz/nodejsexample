@@ -18,7 +18,7 @@ function downloadSachVuiBooks() {
 	) {
 		// Lấy links các thể loại trong trang chủ
 		var linksLevel1 = body.match(
-			/https:\/\/sachvui.com\/the-loai.{5,20}html/g
+			/https:\/\/sachvui\.com\/the-loai.{5,20}html/g
 		);
 		console.log(linksLevel1);
 		for (var i = 0; i < linksLevel1.length; i++) {
