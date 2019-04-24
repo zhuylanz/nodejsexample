@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}/public`));
 
 var htmlTemplate = fs.readFileSync("./public/search.html", "utf8");
+console.log(htmlTemplate)
 
 app.get("/books", function(req, res) {
 	var searchString = req.query.q;
@@ -17,7 +18,7 @@ app.get("/books", function(req, res) {
 	for (var i = 0; i < books.length; i++) {
 		var book = books[i];
 		if (book.noAccentName.match(searchString)) {
-			htmlToSend = htmlTemplate.replace("{name}", book.name);
+			var htmlToSend = htmlTemplate.replace("{name}", book.name);
 			htmlToSend = htmlToSend.replace("{authorName}", book.author);
 			break;
 		}

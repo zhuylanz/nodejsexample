@@ -2,3 +2,7 @@ tạo 1 server cho phép người dùng DOWNLOAD file sách bằng HTTP REQUEST 
 
 - method: GET
 - querystring: sach=[tên sách]
+
+PS: 
+dùng biến __dirname
+và dùng res.sendFile
