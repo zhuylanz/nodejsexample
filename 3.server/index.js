@@ -9,7 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}/public`));
 
 var htmlTemplate = fs.readFileSync("./public/search.html", "utf8");
-console.log(htmlTemplate)
 
 app.get("/books", function(req, res) {
 	var searchString = req.query.q;
