@@ -11,19 +11,19 @@ app.use(express.static(`${__dirname}/public`));
 var htmlTemplate = fs.readFileSync("./public/search.html", "utf8");
 
 app.get("/books", function(req, res) {
-	var searchString = req.query.q;
+	var searchString = req.query.sach;
 	var books = db.books;
 
 	for (var i = 0; i < books.length; i++) {
 		var book = books[i];
 		if (book.noAccentName.match(searchString)) {
-			var htmlToSend = htmlTemplate.replace("{name}", book.name);
-			htmlToSend = htmlToSend.replace("{authorName}", book.author);
+			var bookFilePath = __dirname + "/" + book.filePath;
+
+			console.log(bookFilePath);
+			res.sendFile(bookFilePath);
 			break;
 		}
 	}
-
-	res.send(htmlToSend);
 });
 
 app.listen(8888, function() {
