@@ -12,9 +12,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", function(req, res) {
-	res.send("Hello World!");
-});
 
 app.get("/post/:postId", function(req, res) {
 	res.sendFile(__dirname + "/public/single.html");
