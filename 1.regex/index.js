@@ -3,7 +3,7 @@ var fs = require("fs");
 var fileContent = fs.readFileSync("./hotel-california.txt", "utf8");
 
 // read file:
-console.log(file); // file is a String
+console.log(fileContent); // file is a String
 
 // text analyzer:
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
