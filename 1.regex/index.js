@@ -3,7 +3,7 @@ var fs = require("fs");
 var fileContent = fs.readFileSync("./hotel-california.txt", "utf8");
 
 // read file:
-console.log(fileContent); // file is a String
+console.log(fileContent); // fileContent is a String
 
 // text analyzer:
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -11,7 +11,7 @@ for (var i = 0; i < alphabet.length; i++) {
 	var character = alphabet[i];
 	var count = 0;
 
-	for (var j = 0; j < file.length; j++) {
+	for (var j = 0; j < fileContent.length; j++) {
 		if (fileContent[j] === character) {
 			count++;
 		}
