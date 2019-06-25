@@ -12,6 +12,7 @@ var htmlTemplate = fs.readFileSync("./public/search.html", "utf8");
 
 app.get("/books", function(req, res) {
 	var searchString = req.query.q;
+	console.log(req.query)
 	var books = db.books;
 
 	for (var i = 0; i < books.length; i++) {

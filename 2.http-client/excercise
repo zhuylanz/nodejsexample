@@ -1,0 +1,13 @@
+vào trang https://www.thegioididong.com
+lấy 16 sản phẩm hot nhất về
+---
+hints:
+request.get(
+	{
+		url: "https://thegioididong.com"
+	},
+	function(err, httpResponse, body) {
+		// xử lý body để lấy dữ liệu
+
+	}
+);
